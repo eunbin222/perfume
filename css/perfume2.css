@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+* {
+	padding:0; 
+	margin:0;
+	box-sizing:border-box;
+}
+html {
+	scroll-behavior:smooth;
+}
+html,body {
+	font:12pt/180% "나눔고딕";
+}
+img {
+	display:block;
+	max-width:100%;
+}
+a {
+	text-decoration:none;
+	color:black;
+}
+#layout {
+	max-width:500px;
+	margin:auto;
+	position:relative;
+}
+
+header {
+	background:#c721d6;
+	padding:15px 25px;
+	display:flex;
+	align-items:center;
+}
+header button {
+	background:none;
+	color:white;
+	border:none;
+	font-size:1.5rem;
+}
+header h1 {
+	color:white;
+	margin:auto;
+	transform:translateX(-15px);
+	
+}
+
+nav {
+	position:absolute;
+	background:white;
+	width:100%;
+	height:70vh;
+	box-shadow:0 2px 5px rgba(0,0,0, 0.5);
+	padding:30px;
+	display:none;
+}
+nav ul {
+	list-style:inside url("../images/icon1.png");
+}
+nav li {
+	border-bottom:1px solid #777;
+	padding:15px 0 15px 10px;
+}
+
+main {
+	padding:30px 10px;
+}
+main h2 {
+	padding-bottom:10px;
+}
+main p {
+	text-align:justify;
+	padding-bottom:10px;
+}
+main p img {
+	float:left;
+	width:50px;
+	margin-right:10px;
+}
+main figure img {
+	width:95%;
+	border-radius:20px;
+	box-shadow:0 2px 5px rgba(0,0,0, 0.5);
+	margin:auto;
+}
+main figcaption {
+	font-size:0.9rem;
+	color:gray;
+	text-align:center;
+	padding-top:10px;
+}
+
+aside {
+	background:#f0c8eb;
+	padding:20px 10px;
+}
+aside h3::before {
+	content:"\2619";
+	color:#c721d6;
+	margin-right:10px;
+}
+aside p:not(:last-of-type) {
+	padding-bottom:10px;
+}
+
+footer {
+	background:#ddd;
+	padding:10px;
+}
+
+#topIcon {
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	background:white;
+	font-size:1.25rem;
+	font-weight:bold;
+	border-radius:5px;
+	padding:5px 10px;
+	
+	
+}

@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+* {
+	padding:0; 
+	margin:0; 
+	box-sizing:border-box;
+}
+html {
+	scroll-behavior:smooth;
+}
+html,body {
+	font:font-size:12pt/ 180% "나눔고딕";
+}
+img {
+	display:block; 
+  max-width:100%;/*부모보다 커지지마*/
+}
+a {
+	color:black; 
+	text-decoration:none;
+}
+#layout   {
+	max-width:500px; 
+	margin:auto; 
+	border:0px solid pink;
+  position:relative;	
+}
+
+/**상단**/
+header {
+	background:#c721d6; 
+	display:flex; 
+	align-items:center;
+  color:white; 
+	padding:10px;
+}
+header button {
+  background:none; 
+	color:white;  
+	font-size:1.7rem; 
+	padding:5px; 
+	border:none;
+}
+header h1 {
+	flex:1; 
+	text-align:center;
+}
+header ruby {
+	border:0px solid orange;
+	display:block;/*tansform먹게하려고*/
+	width:100px;
+	margin:auto;
+	transform:translateX(-20px);
+}
+
+/**메뉴**/
+nav {/*부모 layout*/
+	position:absolute;
+	background:white;
+	width:100%;
+	height:70vh;/*브라우저 높이의 70%*/
+	padding:30px;
+	box-shadow:0 5px 5px rgba(0,0,0, 0.5);
+	display:none;
+}
+nav ul{
+	list-style:inside url("../images/icon1.png")
+}
+nav li {
+	border-bottom:1px solid #888;
+	padding:15px 0 15px 10px;
+}
+
+/**메인**/
+main {
+	padding:30px 10px;
+}
+main h2 {
+	padding-bottom:15px;
+}
+main p {
+	text-align:justify;/*양쪽정렬*/
+	padding-bottom:20px;
+}
+main p img {
+	width:70px;
+	float:left;
+	margin-right:15px;
+}
+
+/**메인에 있는 큰 피규어 이미지**/
+main figure img {
+	width:98%;
+	margin:auto;
+	border-radius:20px;
+	box-shadow:2px 2px 5px rgba(0,0,0, 0.4); 
+}
+main figure figcaption{
+	text-align:center;
+	font-size:0.95rem;
+	color:#777;
+	padding-top:5px;
+} 
+
+/**aside**/
+aside {
+	background:#f0c8eb;
+	padding:20px 10px;
+}
+aside h3::before {
+	content:"\2619";
+	color:#c721d6;
+	padding-right:10px;
+}
+aside p:not(:last-of-type) {
+	padding-bottom:10px;
+}
+
+/**footer**/
+footer {
+	background:#ddd;
+	padding:10px;
+	font-size:0.95rem;
+	line-height:160%;
+	text-align:center;
+}
+
+/**올라가는 화살표**/
+#topIcon {
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	background:white;
+	padding:5px 10px;
+	border-radius:5px;
+	box-shadow:0 0 10px black;
+	font-weight:bold;
+	font-size:1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
